@@ -16,9 +16,13 @@ int main(){
     if(i==n-1)
       temp->next = NULL;
     else
+    {
       temp->next = (NodePtr)malloc(sizeof(NODE));
-    printf("Now loop %d\n",i);
-    printf("Value = %d\n",temp->value);
+      temp = temp->next;
+      printf("Now loop %d\n",i);
+      printf("Value = %d\n",temp->value);
+    }
+      
     
   /* head=(NodePtr) malloc(sizeof(NODE));
   head->value = c;
@@ -30,29 +34,8 @@ int main(){
   head->next->next->value=7;
   head->next->next->next=NULL;*/
   }
-  temp->next = NULL;
-
-  printf("a=%d\n",head->value);
-  printf("b=%d\n",head->next->value);
-  printf("b=%d\n",head->next->next->value);
-  
- 
-
-
-  printf("d=%d\n",head->next->next->value);
-  //BRAKE ถึง 16:05
- 
-  temp=head ;
-   for(i=0;i<3;i++){
-         printf("%3d->",temp->value);
-         temp=temp->next;
-
-   }
-   printf("NULL\n");
-   
   for(temp=head; temp!=NULL ;temp=temp->next){
        printf("%3d->",temp->value);
   }
      printf("NULL\n");
-  free()    
 }
