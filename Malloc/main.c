@@ -19,11 +19,7 @@ int main(){
     {
       temp->next = (NodePtr)malloc(sizeof(NODE));
       temp = temp->next;
-      printf("Now loop %d\n",i);
-      printf("Value = %d\n",temp->value);
     }
-      
-    
   /* head=(NodePtr) malloc(sizeof(NODE));
   head->value = c;
   head->next=(NodePtr) malloc(sizeof(NODE));
